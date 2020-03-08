@@ -1,4 +1,4 @@
-<div class="bs-hero__overlay-text">
+<div class="bs-hero__overlay-text" uk-scrollspy="cls: uk-animation-scale-up; delay: 500">
 
   <span class="bs-hero__overlay-cursive">
     <span>Sinds
@@ -6,7 +6,7 @@
     </span>
   </span>
 
-  <span class="bs-hero__overlay-title" uk-scrollspy="cls: uk-animation-scale-up; delay: 500" id="showTitle">Energie<br />nulhuis<br />Woubrugge
+  <span class="bs-hero__overlay-title" id="showTitle">Energie<br />nulhuis<br />Woubrugge
   </span>
 
 </div>

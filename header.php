@@ -19,9 +19,13 @@
 
         <?php if( get_field( 'bg' ) ) { ?>
 
+          <?php if( is_page('techniek') || is_singular('techniek') ): ?>
+            <div class="uk-container">
+          <?php endif ?>
+
           <section class="bs-hero" style="background-image: url(<?php the_field( 'bg' ); ?>)">
 
-            <div class="bs-hero__overlay"
+            <div class="bs-hero__overlay">
 
               <?php get_template_part( 'template-parts/content', 'nav' ); ?>
 
@@ -67,6 +71,10 @@
             </div>
 
           </section><!-- bs-hero -->
+
+          <?php if( is_page('techniek') || is_singular('techniek') ): ?>
+            </div>
+          <?php endif ?>
 
         <?php	} else { ?>
 

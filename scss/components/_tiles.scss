@@ -1,0 +1,87 @@
+.bs-tiles {
+
+  &__item {
+    display: flex;
+    color: #fff;
+    font-size: .9rem;
+    line-height: 1.35;
+    min-height: 21.75rem;
+
+    &:nth-of-type(odd) {
+      border-left: 1px solid lightgrey;
+      border-right: 1px solid lightgrey;
+      border-bottom: 1px solid lightgrey;
+    }
+
+    &:nth-of-type(even) {
+      border-right: 1px solid lightgrey;
+      border-bottom: 1px solid lightgrey;
+    }
+
+    &:nth-of-type(4n+3),
+    &:nth-of-type(4n+4) {
+      flex-direction: row-reverse;
+    }
+
+    &:nth-of-type(5n+1) {
+      background-color: #77aaff;
+    }
+
+    &:nth-of-type(5n+2) {
+      background-color: #99ccff;
+      color: #222;
+    }
+
+    &:nth-of-type(5n+3) {
+      background-color: #bbeeff;
+      color: #222;
+    }
+
+    &:nth-of-type(5n+4) {
+      background-color: #5588ff;
+    }
+
+    &:nth-of-type(5n+5) {
+      background-color: #3366ff;
+    }
+  }
+
+  &__heading {
+    display: block;
+    @include heading;
+    margin-bottom: .5rem;
+  }
+
+  &__text {
+    flex: 0 0 50%;
+
+    &-content {
+      padding: 2rem;
+    }
+  }
+
+  &__photo {
+    flex: 1;
+    min-height: 22.5vh;
+    background-position: center;
+    background-size: cover;
+  }
+
+  &__button {
+    display: inline-block;
+    padding: .25rem .5rem;
+    color: currentColor;
+    margin-top: 1rem;
+    border: 1px solid currentColor;
+    @include heading;
+    font-size: .8rem;
+    transition: all .2s;
+
+    &:hover {
+      text-decoration: none;
+      color: inherit;
+      transform: rotate(2.5deg) scale(1.2);
+    }
+  }
+
+}

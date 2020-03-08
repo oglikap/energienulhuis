@@ -12,7 +12,7 @@
 
   &__overlay-text {
     line-height: 1;
-    width: 90%;
+    // width: 90%;
 
     position: absolute;
     left: 35%;
@@ -24,8 +24,8 @@
     color: rgba(255, 255, 74, .7);
 
     span {
-      font-size: 3.5rem;
-      filter: drop-shadow(1px 1px 3px #000);
+      font-size: 5.5rem;
+      filter: drop-shadow(1px 1px 3px #555);
 
       span {
         font-size: 2em;
@@ -35,8 +35,14 @@
 
   &__overlay-title {
     @include heading;
-    display: block;
-    font-size: 2.5rem;
-    color: rgba(255, 255, 255, .5)
+    padding: 1.5rem 2rem;
+    margin: 0 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: rgba(255, 255, 255, .85);
+    filter: drop-shadow(1px 1px 5px #555);
+    // background-color: rgba( black, .33 );
   }
 }

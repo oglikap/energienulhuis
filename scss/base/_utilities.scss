@@ -1,0 +1,12 @@
+.bs-heading {
+  padding: .75rem;
+  border: 1px solid lightgrey;
+  background-color: #f7f7f7;
+  font-variant: all-small-caps;
+
+  span {
+    font-variant: normal;
+    font-size: 1.25rem;
+    @include heading;
+  }
+}

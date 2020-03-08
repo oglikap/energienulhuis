@@ -1,7 +1,6 @@
-<div class="uk-flex uk-flex-center uk-flex-middle">
-  <div>
-    <a href="#" class="uk-visible@s" uk-totop="icon: arrow-up; ratio: 5.5" style="color: #840f0a; font-size: 2.5em;" uk-scroll>To top</a>
-
-    <a href="#" class="uk-hidden@s" uk-totop="icon: arrow-up; ratio: 3.5" style="color: #840f0a; font-size: 2.5em;" uk-scroll>To top</a>
+<div class="bs-totop">
+  <div class="bs-totop__box">
+    <span class="bs-totop__text">Naar boven</span>
+    <a href="#" class="bs-totop__link" uk-icon="icon: chevron-up; ratio: 3.5" uk-scroll></a>
   </div>
 </div>

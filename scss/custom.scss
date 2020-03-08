@@ -2,13 +2,17 @@
 @import "abstracts/mixins";
 
 @import "base/base";
+@import "base/utilities";
 
 @import "components/logo";
+@import "components/tiles";
 @import "components/topdown";
+@import "components/totop";
 
 @import "layout/menu";
 @import 'layout/wrapper';
 @import 'layout/hero';
+@import 'layout/footer';
 
 @media screen and (max-width: 450px) {
   html {
@@ -24,7 +28,7 @@ $font-main: 'AvenirNextLTPro-Medium', sans-serif;
 
 
 .bs-color-red {
-  color: $red;
+  color: $color-red;
 }
 
 .uk-link, a {
@@ -53,7 +57,7 @@ $font-main: 'AvenirNextLTPro-Medium', sans-serif;
 
 
 @import "typografie";
-@import "navbar";
+// @import "navbar";
 @import "techniek";
 @import "content";
 @import "gallery";
